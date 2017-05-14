@@ -8,7 +8,7 @@ namespace MVC5Course.Controllers
         public string MyProperty { get; set; }
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
+        {   
             filterContext.Controller.ViewBag.Message = "Your application description page.";
         }
 

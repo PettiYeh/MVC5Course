@@ -75,5 +75,12 @@ namespace MVC5Course.Controllers
             return Json(db.Product.Take(5),
                 JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult VT()
+        {
+            ViewBag.IsEnabled = true;
+
+            return View();
+        }
     }
 }

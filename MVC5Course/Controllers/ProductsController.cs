@@ -155,6 +155,7 @@ namespace MVC5Course.Controllers
         [HttpPost]
         public ActionResult ListProducts(ProductListSearchVM searchCondition, ProductBatchUpdateVM[] items)
         {
+            // TryUpdateModel(searchCondition, "searchCondition")
             if (ModelState.IsValid)
             {
                 foreach (var item in items)
